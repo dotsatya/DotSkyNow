@@ -2,6 +2,7 @@ import type { ForecastData } from "@/api/types";
 import { format } from "date-fns";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { ArrowDown, ArrowUp, Droplet, Wind } from "lucide-react";
+import '../App.css';
 
 interface WeatherForecastProps {
   data: ForecastData;
@@ -56,7 +57,8 @@ const WeatherForecast = ({ data }: WeatherForecastProps) => {
             return (
               <div
                 key={day.date}
-                className="grid grid-cols-3 items-center gap-4 rounded-lg border p-4"
+                className="grid  items-center gap-4 rounded-lg border p-4 grid-cols-1 sm:grid-cols-3 forecast-item"
+                // className="    grid     grid-cols-3 md:grid-cols-2   xl:grid-cols-3 items-center gap-4 rounded-lg border  p-4"
               >
                 <div>
                   <p className="font-medium">
@@ -79,8 +81,8 @@ const WeatherForecast = ({ data }: WeatherForecastProps) => {
 
                 <div className="flex justify-end gap-4">
                   <span className="flex items-center gap-1">
-                    <Droplet className="w-4 h-4 text-blue-500" />{" "}
-                    {day.humidity}%
+                    <Droplet className="w-4 h-4 text-blue-500" /> {day.humidity}
+                    %
                   </span>
                   <span className="flex items-center gap-1 ">
                     <Wind className="w-4 h-4 text-green-500" /> {day.wind} km/h

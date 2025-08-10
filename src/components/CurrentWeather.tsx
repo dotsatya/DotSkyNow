@@ -1,6 +1,9 @@
 import type { GeocodingResponse, WeatherData } from "@/api/types";
 import { Card, CardContent } from "./ui/card";
 import { ArrowDown, ArrowUp, Droplets, Wind } from "lucide-react";
+import countries from "i18n-iso-countries";
+import enLocale from "i18n-iso-countries/langs/en.json";
+countries.registerLocale(enLocale);
 
 interface CurrentWeatherProps {
   data: WeatherData;
@@ -34,16 +37,19 @@ const CurrentWeather = ({ data, locationName }: CurrentWeatherProps) => {
                   </span>
                 )}
               </div>
-              <p className="text-muted-foreground">{locationName?.country}</p>
+              <p className="text-muted-foreground uppercase">
+                {locationName?.country &&
+                  countries.getName(locationName.country, "en")}
+              </p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 pb-2">
               <p className="text-6xl font-bold">{formateTemp(temp)}°</p>
 
               <div>
-                <p className="text-sm font-medium text-muted-foreground">
+                <p className="text-sm font-medium text-muted-foreground p-1.5">
                   Feels like {formateTemp(feels_like)}°
                 </p>
-                <div className="flex text-sm font-medium text-muted-foreground">
+                <div className="flex text-sm font-medium text-muted-foreground ml-0.5">
                   <span className="flex items-center gap-1 text-blue-500 pl-0 pr-2">
                     <ArrowDown className="w-3 h-3" /> {formateTemp(temp_min)}°
                   </span>
@@ -54,9 +60,9 @@ const CurrentWeather = ({ data, locationName }: CurrentWeatherProps) => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="flex items-center gap-2.5">
-                <Droplets className="w-4 h-4 text-blue-500" />
+            <div className="grid grid-cols-2 gap-6">
+              <div className="flex items-center gap-2">
+                <Droplets className="size={40} text-blue-500" />
                 <div className=" space-y-0.5">
                   <p className="text-sm font-medium ">Humidity :</p>
                   <p className="text-sm font-medium text-muted-foreground ">
@@ -67,8 +73,8 @@ const CurrentWeather = ({ data, locationName }: CurrentWeatherProps) => {
 
               {/* same thing for wind */}
 
-              <div className="flex items-center gap-2.5">
-                <Wind className="w-4 h-4 text-blue-500" />
+              <div className="flex items-center gap-2">
+                <Wind className="size={40} text-blue-500" />
                 <div className=" space-y-0.5">
                   <p className="text-sm font-medium ">Pressure :</p>
                   <p className="text-sm font-medium text-muted-foreground">

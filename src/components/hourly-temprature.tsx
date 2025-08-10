@@ -9,7 +9,6 @@ import {
   Tooltip,
 } from "recharts";
 import { format } from "date-fns";
-import { Divide } from "lucide-react";
 
 interface HourlyTempretureProps {
   data: ForecastData;
@@ -26,11 +25,11 @@ const HourlyTempreture = ({ data }: HourlyTempretureProps) => {
       <CardHeader>
         <CardTitle>Today's Hourly Tempreture</CardTitle>
       </CardHeader>
-      <CardContent>
-        <div className="h-[160px] w-full">
+      {/* <CardContent> */}
+
+        <div className="h-[160px] w-full pr-8">
           <ResponsiveContainer width={"100%"} height={"100%"}>
             <LineChart data={chartData}>
-             
               <XAxis
                 dataKey="time"
                 // stroke="#8884d8"
@@ -43,7 +42,9 @@ const HourlyTempreture = ({ data }: HourlyTempretureProps) => {
                 fontSize={12}
                 tickLine={false}
                 axisLine={false}
-                tickFormatter={(value) => `${value}°`}
+                // tickFormatter={(value) => `${value}°`}
+                tick={false} // hides the text labels
+              domain={['dataMin - 2', 'dataMax + 1']} 
               />
 
               <Tooltip
@@ -56,7 +57,7 @@ const HourlyTempreture = ({ data }: HourlyTempretureProps) => {
                             <span className="text-[0.7rem] uppercase text-muted-foreground">
                               Temprature{" "}
                             </span>
-                            <span className="font-bold">  
+                            <span className="font-bold">
                               {payload[0].value}°{" "}
                             </span>
                           </div>
@@ -94,7 +95,7 @@ const HourlyTempreture = ({ data }: HourlyTempretureProps) => {
             </LineChart>
           </ResponsiveContainer>
         </div>
-      </CardContent>
+      {/* </CardContent> */}
     </Card>
   );
 };

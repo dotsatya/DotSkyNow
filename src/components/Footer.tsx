@@ -5,10 +5,7 @@ import { FiTwitter } from "react-icons/fi";
 
 const Footer: React.FC = () => {
   return (
-    <footer
-      id="footer"
-      className="relative py-6 md:py-6"
-    >
+    <footer id="footer" className="relative py-6 md:py-6">
       {/* Top Border Line */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-50"></div>
 
@@ -16,7 +13,7 @@ const Footer: React.FC = () => {
         {/* Logo / Title */}
         <h1 className="text-2xl font-bold hover:text-gray-600 transition-colors">
           <a href="#home">DotSkyNow</a>
-        </h1>        
+        </h1>
 
         {/* Copyright */}
         <span className="text-xs font-light text-gray-400text text-center md:text-right mt-4 md:mt-0">

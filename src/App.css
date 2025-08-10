@@ -1,0 +1,5 @@
+@media (min-width: 768px) and (max-width: 1025px) {
+  .forecast-item {
+    grid-template-columns: 1fr 1fr; /* 2 columns instead of 3 */
+  }
+}
