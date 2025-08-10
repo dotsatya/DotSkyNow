@@ -1,6 +1,7 @@
 import { useTheme } from "@/context/theme-provider";
 import { Moon, Sun } from "lucide-react";
 import { Link } from "react-router-dom";
+import CitySearch from "./CitySearch";
 
 
 
@@ -17,11 +18,13 @@ const isDark = theme === "dark";
           <h1>DotSkyNow</h1>
         </Link>
 
-        <div>
+        <div className="flex items-center gap-40">
           {/* search */}
+        <CitySearch />
+
           {/* theme toggle manu with dark and light and system */}
-          <div onClick={() => setTheme(isDark ? "light" : "dark")} className={`flex items-center cursor-pointer transition-transform duration-500 ${isDark ? "rotate-180" : "rotate-0" }`}>
-            {isDark? <Sun className="w-6 h-6 text-yellow-500 rotate-0 transition-all" /> : <Moon className="w-6 h-6 text-blue-500 rotate-90 transition-all" />}
+          <div onClick={() => setTheme(isDark ? "light" : "dark")} className={`flex border rounded-full p-1.5 bg-gray-600  items-center cursor-pointer transition-transform duration-500 ${isDark ? "rotate-180" : "rotate-0" }`}>
+            {isDark? <Sun className="w-4 h-4 text-white rotate-0 transition-all" /> : <Moon className="w-4 h-4 text-white rotate-90 transition-all" />}
           </div>
           {}
           

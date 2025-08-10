@@ -74,7 +74,7 @@ const CurrentWeather = ({ data, locationName }: CurrentWeatherProps) => {
               {/* same thing for wind */}
 
               <div className="flex items-center gap-2">
-                <Wind className="size={40} text-blue-500" />
+                <Wind className="size={40} text-green-500" />
                 <div className=" space-y-0.5">
                   <p className="text-sm font-medium ">Pressure :</p>
                   <p className="text-sm font-medium text-muted-foreground">
