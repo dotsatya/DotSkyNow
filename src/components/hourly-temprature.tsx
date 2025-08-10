@@ -1,5 +1,5 @@
 import type { ForecastData } from "@/api/types";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardHeader, CardTitle } from "./ui/card";
 import {
   ResponsiveContainer,
   Line,
