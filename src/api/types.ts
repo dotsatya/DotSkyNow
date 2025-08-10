@@ -11,6 +11,7 @@ export interface WeatherCondition {
 }
 
 export interface WeatherData {
+  list: any;
   coord: Coordinates;
   weather: WeatherCondition[];
   main: {

@@ -11,7 +11,7 @@ const CurrentWeather = ({ data, locationName }: CurrentWeatherProps) => {
   const {
     weather: [currentWeather],
     main: { temp, feels_like, temp_min, temp_max, humidity, pressure },
-    wind: { speed, deg },
+    // wind: { speed, deg },
   } = data;
 
   const formateTemp = (temp: number) => {
@@ -79,8 +79,8 @@ const CurrentWeather = ({ data, locationName }: CurrentWeatherProps) => {
             </div>
           </div>
 
-            <div className="flex flex-col items-center justify-center">
-          <div className="relative flex aspect-square w-full max-w-[200px] items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
+            <div className="relative flex aspect-square w-full max-w-[200px] items-center justify-center">
               <img
                 src={`https://openweathermap.org/img/wn/${currentWeather.icon}@4x.png`}
                 alt={currentWeather.description}
