@@ -1,69 +1,78 @@
-# React + TypeScript + Vite
+# 🌤️ DotSkyNow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DotSkyNow is a modern, responsive weather application built using **React**, **TypeScript**, and **shadcn/ui**.  
+It provides real-time weather information, forecasts, and location-based weather updates using the **OpenWeatherMap API**.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://dotskynow.vercel.app/](https://dotskynow.vercel.app/)  
+📦 **Repository:** [https://github.com/dotsatya/DotSkyNow](https://github.com/dotsatya/DotSkyNow)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🌍 **Real-time Weather Data** – Get current temperature, humidity, wind speed, and more.
+- 📍 **Location Search** – Search weather by city name with autocomplete suggestions.
+- 🗺️ **Geolocation Support** – Automatically detect and display weather for your current location.
+- 📊 **Hourly & Daily Forecasts** – View temperature changes throughout the day/week.
+- 📱 **Responsive UI** – Optimized for mobile, tablet, and desktop screens.
+- ⚡ **Fast & Cached Data** – Uses **TanStack Query** for API caching and state management.
+- 🎨 **Modern UI Components** – Styled with **shadcn/ui** and **Tailwind-based** design system.
+- 🌗 **Theme Switching** – System-based light/dark theme.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Frontend:**
+- [React](https://react.dev/) – Component-based UI library
+- [TypeScript](https://www.typescriptlang.org/) – Strongly typed JavaScript
+- [shadcn/ui](https://ui.shadcn.com/) – Accessible and customizable UI components
+- [React Router DOM](https://reactrouter.com/) – Client-side routing
+- [TanStack Query](https://tanstack.com/query/latest) – Server state management
+- [Lucide React](https://lucide.dev/) – Icon library
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**API:**
+- [OpenWeatherMap API](https://openweathermap.org/) – Weather data provider
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Development:**
+- ESLint + TypeScript strict mode – Code linting & type safety
+- Prettier – Code formatting
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🔑 API Usage
+
+DotSkyNow uses the **[OpenWeatherMap API](https://openweathermap.org/api)** to fetch:
+- Current weather data
+- Hourly forecasts
+- Daily forecasts
+
+**Example Request:**
+```ts
+const url = `${API_CONFIG.BASE_URL}/weather?q=London&appid=${API_CONFIG.API_KEY}`;
+
+---
+
+## Response Example:
+
+{
+  "coord": { "lon": -0.1257, "lat": 51.5085 },
+  "weather": [{ "description": "clear sky", "icon": "01d" }],
+  "main": { "temp": 18.32, "humidity": 56 },
+  "wind": { "speed": 3.09 },
+  "name": "London"
+}
+
+---
+
+## 🖼️ Screenshots
+
+### 🌤 Dashboard
+![Dashboard Screenshot](./src/screenshots/dashboard.png)
+
+### 📍 City Search
+![City Search Screenshot](./src/screenshots/search1.png)
+![City Search Screenshot](./src/screenshots/search2.png)
+
+### 📊 Weather Forecast
+![Forecast Screenshot](./screenshots/forecast.png)
