@@ -47,6 +47,22 @@ DotSkyNow uses the **[OpenWeatherMap API](https://openweathermap.org/api)** to f
 - Hourly forecasts
 - Daily forecasts
 
+---
+
+## 🖼️ Screenshots
+
+### 🌤 Dashboard
+![Dashboard Screenshot](./src/screenshots/dashboard.png)
+
+### 📍 City Search
+![City Search Screenshot](./src/screenshots/search1.png)
+![City Search Screenshot](./src/screenshots/search2.png)
+
+### 📊 Weather Forecast
+![Forecast Screenshot](./screenshots/forecast.png)
+
+---
+
 **Example Request:**
 ```ts
 const url = `${API_CONFIG.BASE_URL}/weather?q=London&appid=${API_CONFIG.API_KEY}`;
@@ -63,16 +79,3 @@ const url = `${API_CONFIG.BASE_URL}/weather?q=London&appid=${API_CONFIG.API_KEY}
   "name": "London"
 }
 
----
-
-## 🖼️ Screenshots
-
-### 🌤 Dashboard
-![Dashboard Screenshot](./src/screenshots/dashboard.png)
-
-### 📍 City Search
-![City Search Screenshot](./src/screenshots/search1.png)
-![City Search Screenshot](./src/screenshots/search2.png)
-
-### 📊 Weather Forecast
-![Forecast Screenshot](./screenshots/forecast.png)
