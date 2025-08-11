@@ -73,6 +73,7 @@ const WeatherDashboard = () => {
   }
 
   const locationName = locationQuery.data?.[0];
+
   if (weatherQuery.error || forecastQuery.error) {
     return (
       <Alert variant="destructive">
@@ -110,6 +111,7 @@ const WeatherDashboard = () => {
           />
         </Button>
       </div>
+      
       <div className="grid gap-6">
         {/* CurrentWeather & HourlyTempreture */}
         <div className="flex flex-col lg:flex-row gap-6">

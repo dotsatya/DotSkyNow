@@ -1,7 +1,6 @@
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
-import { FiTwitter } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
@@ -23,10 +22,20 @@ const Footer: React.FC = () => {
         {/* Social Links */}
         <div className="flex items-center justify-center gap-5 mt-2 md:mt-0">
           <a
+            href="https://www.twitter.com/satya_sundar_dey"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl  hover:text-gray-400 transition-colors"
+            title="Twitter Profile"
+          >
+            <FaXTwitter />
+          </a>
+          <a
             href="https://github.com/dotsatya"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl hover:text-gray-400 transition-colors"
+            title="GitHub Profile"
           >
             <BsGithub />
           </a>
@@ -35,24 +44,9 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl hover:text-gray-400 transition-colors"
+            title="LinkedIn Profile"
           >
             <BsLinkedin />
-          </a>
-          <a
-            href="https://www.facebook.com/share/1VG4ofpW1E/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xl  hover:text-gray-400 transition-colors"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            href="https://www.twitter.com/satya_sundar_dey"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xl  hover:text-gray-400 transition-colors"
-          >
-            <FiTwitter />
           </a>
         </div>
       </div>
