@@ -57,7 +57,7 @@ export function useGeolocation() {
        },
        {
          enableHighAccuracy: true,
-         timeout: 5000,
+         timeout: 10000, // after 5 seconds the request will timeout 
          maximumAge: 0,
        }
       );
