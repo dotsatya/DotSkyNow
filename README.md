@@ -59,7 +59,7 @@ DotSkyNow uses the **[OpenWeatherMap API](https://openweathermap.org/api)** to f
 ![City Search Screenshot](./src/screenshots/search2.png)
 
 ### 📊 Weather Forecast
-![Forecast Screenshot](./screenshots/forecast.png)
+![Forecast Screenshot](./src/screenshots/forecast.png)
 
 ---
 
