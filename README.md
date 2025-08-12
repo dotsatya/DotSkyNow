@@ -1,7 +1,7 @@
 # 🌤️ DotSkyNow
 
 DotSkyNow is a modern, responsive weather application built using **React**, **TypeScript**, and **shadcn/ui**.  
-It provides real-time weather information, forecasts, and location-based weather updates using the **OpenWeatherMap API**.
+It provides real-time weather information, forecasts, and location-based weather updates using the **OpenWeatherMap API**, now with **smooth animated theme switching** powered by **Skiper UI**.
 
 🔗 **Live Demo:** [https://dotskynow.vercel.app/](https://dotskynow.vercel.app/)  
 📦 **Repository:** [https://github.com/dotsatya/DotSkyNow](https://github.com/dotsatya/DotSkyNow)
@@ -17,7 +17,7 @@ It provides real-time weather information, forecasts, and location-based weather
 - 📱 **Responsive UI** – Optimized for mobile, tablet, and desktop screens.
 - ⚡ **Fast & Cached Data** – Uses **TanStack Query** for API caching and state management.
 - 🎨 **Modern UI Components** – Styled with **shadcn/ui** and **Tailwind-based** design system.
-- 🌗 **Theme Switching** – System-based light/dark theme.
+- 🌗 **Theme Switching with Animations** – Smooth light/dark mode transition using **Skiper UI**.
 
 ---
 
@@ -30,6 +30,7 @@ It provides real-time weather information, forecasts, and location-based weather
 - [React Router DOM](https://reactrouter.com/) – Client-side routing
 - [TanStack Query](https://tanstack.com/query/latest) – Server state management
 - [Lucide React](https://lucide.dev/) – Icon library
+- [Skiper UI](https://skiper-ui.com/) – Theme toggle animations
 
 **API:**
 - [OpenWeatherMap API](https://openweathermap.org/) – Weather data provider
