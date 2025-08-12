@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider"
 import WeatherDashboard from "./pages/weather-dashboard";
 import CityPage from "./pages/city-page";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+// import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -38,7 +38,7 @@ function App() {
         </ThemeProvider>
       </BrowserRouter>     
        {/* The rest of your application */}
-      <ReactQueryDevtools initialIsOpen={false} />
+      {/* <ReactQueryDevtools initialIsOpen={false} /> */}
     </QueryClientProvider>
   );
 }
