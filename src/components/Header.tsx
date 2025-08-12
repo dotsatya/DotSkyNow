@@ -1,7 +1,9 @@
 import { useTheme } from "@/context/theme-provider";
-import { Moon, Sun } from "lucide-react";
+// import { Moon, Sun } from "lucide-react";
 import { Link } from "react-router-dom";
 import CitySearch from "./CitySearch";
+import ThemeToggleButton from "../components/ui/theme-toggle-button"
+
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -21,14 +23,25 @@ const Header = () => {
 
           <div
             onClick={() => setTheme(isDark ? "light" : "dark")}
-            className="flex items-center justify-center border rounded-full p-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="flex items-center justify-center "
             aria-label="Toggle theme"
           >
-            {isDark ? (
+          {/* <div
+            onClick={() => setTheme(isDark ? "light" : "dark")}
+            className="flex items-center justify-center border rounded-full p-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            aria-label="Toggle theme"
+          > */}
+
+            {/* <div> */}
+              <ThemeToggleButton  variant="circle-blur" start="top-left"/>
+              
+            {/* </div> */}
+
+            {/* {isDark ? (
               <Sun className="w-5 h-5 text-yellow-400 transition-transform" />
             ) : (
               <Moon className="w-5 h-5 text-blue-500 transition-transform" />
-            )}
+            )} */}
           </div>
         </div>
       </div>
