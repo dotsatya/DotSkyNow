@@ -3,6 +3,7 @@ import { useTheme } from "@/context/theme-provider";
 import { Link } from "react-router-dom";
 import CitySearch from "./CitySearch";
 import ThemeToggleButton from "../components/ui/theme-toggle-button"
+import LogoImage from "../screenshots/Untitled-2.png";
 
 
 const Header = () => {
@@ -13,6 +14,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur-md py-3 shadow-sm transition-colors">
       <div className="container mx-auto flex flex-col gap-3 md:flex-row md:items-center md:justify-between px-8 md:px-8">
         <Link to="/" className="flex items-center gap-2 group justify-center md:justify-start">
+          <img src={LogoImage} alt="DotSkyNow logo" className="w-20 " />
           <h1 className="text-3xl mb-1 font-bold tracking-tight text-primary transition-colors group-hover:text-blue-600">
             DotSkyNow
           </h1>
